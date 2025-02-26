@@ -26,7 +26,7 @@ def upload_file():
     code = file.read().decode('utf-8')  # Read the file content as a string
 
     # Track emissions while executing the code
-    tracker = EmissionsTracker()
+    tracker = EmissionsTracker(output_method=None) #Disables file output
     tracker.start()
 
     # Execute the uploaded Python code safely
