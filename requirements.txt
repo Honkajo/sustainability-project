@@ -1,2 +1,6 @@
 codecarbon==2.8.3
 Flask==3.1.0
+codecarbon[dashboard]
+fire
+dash
+dash_bootstrap_components
