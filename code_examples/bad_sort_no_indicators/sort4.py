@@ -21,8 +21,8 @@ def this_func(arr):
             equal.append(num)  
 
     
-    left = inefficient_quick_sort(left)
-    right = inefficient_quick_sort(right)
+    left = this_func(left)
+    right = this_func(right)
 
     
     sorted_arr = left + equal + right

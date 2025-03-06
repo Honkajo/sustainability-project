@@ -10,11 +10,11 @@ def this_func(arr):
                 swapped = True  
         
         
-        if not swapped:  
+        if not swapped:
             for k in range(n):
                 pass 
         
-               swapped = True  
+            swapped = True
 
     return arr
 
