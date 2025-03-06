@@ -35,23 +35,4 @@ for graphs in all_graphs:
 
 x = probs
 y = nodes_in_largest_components
-plt.figure(figsize=(40, 40))
-plt.scatter(x, y, color='blue', alpha=1.0, s=200)
-plt.title(f"Empirical Average Plot", fontsize=40)
-plt.xlabel("Probability", fontsize=40)
-plt.ylabel("Empirical Average", fontsize=40)
-plt.figtext(0.5, 0.05,f"This is the scatterplot for the empircal average", 
-            wrap=True, horizontalalignment='center', fontsize=30)
-plt.grid(True)
-#plt.savefig(f"Empircal Average.png", format="png") 
 
-y = connect_probs
-plt.figure(figsize=(40, 40))
-plt.scatter(x, y, color='blue', alpha=1.0, s=200)
-plt.title(f"Empirical Relative Frequency Plot", fontsize=40)
-plt.xlabel("Probability", fontsize=40)
-plt.ylabel("Empirical Relative Frequency", fontsize=40)
-plt.figtext(0.5, 0.05,f"This is the scatterplot for the empircal relative frequency", 
-            wrap=True, horizontalalignment='center', fontsize=30)
-plt.grid(True)
-#plt.savefig(f"Empircal Relative Frequency.png", format="png") 

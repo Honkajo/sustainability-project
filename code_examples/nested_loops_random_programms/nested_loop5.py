@@ -26,4 +26,3 @@ def inefficient_prime_finder(limit):
 
 # Example usage
 primes = inefficient_prime_finder(2000)
-print(primes)

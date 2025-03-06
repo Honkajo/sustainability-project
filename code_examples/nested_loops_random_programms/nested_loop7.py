@@ -11,5 +11,4 @@ def function_p_f_z(n):
 # Example usage
 n = 1234
 result = function_p_f_z(n)
-print(result)
 

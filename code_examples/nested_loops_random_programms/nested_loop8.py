@@ -17,6 +17,5 @@ def this_func(rows, cols):
 # Example usage
 rows, cols = 2500, 2500
 result = this_func(rows, cols)
-for row in result:
-    print(row)
+
 

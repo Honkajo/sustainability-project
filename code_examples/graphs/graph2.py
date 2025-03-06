@@ -186,10 +186,9 @@ def bad_cycle(G):
         if counter % 2 != 0:
             return cycle
 
-print(graph_is_balanced(G1))
-print(graph_is_balanced(G2))
-print(get_groups(G2))
-print()
-print(bad_cycle(G1))
+graph_is_balanced(G1)
+graph_is_balanced(G2)
+get_groups(G2)
+bad_cycle(G1)
 
 

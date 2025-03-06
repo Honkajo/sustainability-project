@@ -17,4 +17,4 @@ def find_duplicates(lst):
 
 
 
-print(find_duplicates(L))
+find_duplicates(L)

@@ -16,5 +16,4 @@ def this_func(lst):
     return duplicates
 
 
-
-print(this_func(L))
+this_func(L)

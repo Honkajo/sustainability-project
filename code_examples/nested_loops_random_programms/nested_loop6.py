@@ -28,5 +28,4 @@ def inefficient_fibonacci(n):
 # Example usage
 n = 1000
 fib_numbers = inefficient_fibonacci(n)
-print(fib_numbers)
 
