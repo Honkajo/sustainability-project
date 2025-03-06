@@ -1,2 +1,9 @@
 codecarbon==2.8.3
 Flask==3.1.0
+<<<<<<< Updated upstream
+=======
+codecarbon[dashboard]
+fire
+dash
+dash_bootstrap_components
+>>>>>>> Stashed changes

@@ -1,2 +1,5 @@
 venv/
 __pycache__/
+code_examples/.DS_Store
+powermetrics_log.txt
+tests/fibonacci copy.py
