@@ -104,6 +104,11 @@ def upload_file():
     if not os.path.exists(CSV_PATH):
         return "Failed to create emissions data"
     time.sleep(3)
+
+    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+        return jsonify({"redirect": "/launch"})
+    else:
+        return redirect("/launch")
     return redirect("/launch")
 
 @app.route('/launch')
