@@ -103,6 +103,7 @@ def upload_file():
     # Verify CSV creation
     if not os.path.exists(CSV_PATH):
         return "Failed to create emissions data"
+    time.sleep(3)
     return redirect("/launch")
 
 @app.route('/launch')
