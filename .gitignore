@@ -1,5 +1,12 @@
 venv/
 __pycache__/
+powermetrics_log.txt
+tests/fibonacci copy.py
+code_examples/nested_loops_random_programms/.pkl
+.DS_Store
+.DS_Store
+.DS_Store
+df_output/graphs.csv
 code_examples/.DS_Store
 powermetrics_log.txt
 tests/fibonacci copy.py

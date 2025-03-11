@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Python File</title>
+    <title>Upload Python File to analyze its emissions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Upload a Python File</h1>
+    <p><b>Note:</b> Energy consumption outputs have to be at least 0.1 kWh to be shown. However, emissions still show no matter the output size. For small programs, they are typically in the pico (p) or nano (n) gram ranges.</p>
     <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="file">Choose Python File:</label>
-        <input type="file" name="file" accept=".py">
-        <button type="submit">Upload</button>
+        <div id="drop-zone">
+            Click here to upload or drag and drop 
+        </div>
+        <input type="file" name="file" id="file" accept=".py" class="hidden">
     </form>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>

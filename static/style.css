@@ -1,0 +1,44 @@
+/* Horizontal centering */
+body {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1, p, form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+h1, p {
+    text-align: center;
+}
+
+/* Drop zone*/
+#drop-zone {
+    width: 300px;
+    height: 100px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#drop-zone.dragover {
+    background-color: lightgreen;
+    border-color: green;
+}
+
+#drop-zone.uploading {
+    background-color: #e6ffe6;
+    border-color: #4CAF50;
+    color: #4CAF50;
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
