@@ -1,3 +1,4 @@
+import networkx as nx
 def this_func_optimized(G):
     all_paths = {}
     try:

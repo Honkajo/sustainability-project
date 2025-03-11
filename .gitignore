@@ -3,3 +3,9 @@ __pycache__/
 code_examples/.DS_Store
 powermetrics_log.txt
 tests/fibonacci copy.py
+.DS_Store
+/df_output_bad_code
+/df_output_chatgpt_code
+/df_output_deepseek_code
+/df_output_llama_code
+/results

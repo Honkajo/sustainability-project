@@ -1,13 +1,16 @@
-import random 
+import random
+import numpy as np
+
+random.seed(0)
+L_size = 5000000 
+L = np.random.rand(L_size)
 
 def this_func(arr):
     if len(arr) <= 1:
         return arr  
 
-    
     pivot = arr[0]
 
-    
     left = []
     right = []
     equal = []
@@ -20,21 +23,10 @@ def this_func(arr):
         else:
             equal.append(num)  
 
-    
     left = this_func(left)
     right = this_func(right)
 
-    
-    sorted_arr = left + equal + right
-    final_copy = sorted_arr[:]  
+    return np.concatenate((left, equal, right))
 
-    return final_copy  
+L = this_func(L)
 
-random.seed(0)
-L_size = 5000000 
-L = []
-for _ in range(L_size):
-    num = random.random() 
-    L.append(num)
-
-this_func(L)
